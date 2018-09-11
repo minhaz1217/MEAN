@@ -1,0 +1,4 @@
+
+// these needs to be at the end and in this order
+app.use(passport.initialize());
+app.use(passport.session());

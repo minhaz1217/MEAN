@@ -1,0 +1,10 @@
+
+
+
+ng-bind is one way it gose from controller to the model
+ng-data is two way binding it goes from controller to model and model to controller.
+
+
+ orderBy: 'created_at':true 
+ orderBy takes 2 paramaters 
+ if 2nd parameter is set to true then it'll order it in reverse
