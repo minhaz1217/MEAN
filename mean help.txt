@@ -1,0 +1,25 @@
+npm install mongoose --save
+
+
+mongodb is the database, mongoose enforces the schema
+
+add path to the mongo bin directory in windows variable
+run >> mongod 
+to start the server
+run >> mongo
+to see if the database installation is done
+
+mongo >> 
+    show dbs 
+    use test-chirp
+    show collection
+    db.users.find()
+-- ONE ERROR
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+ReferenceError: releaseEvents is not defined
+
+can occure because of not returning res(200, data);
+IE: not returning the error handler after detecting it.
