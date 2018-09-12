@@ -1,6 +1,23 @@
+starting node and express:
+
+1. >> npm install express-generator -g 
+2. >> express --ejs <directory location>
+3. (express --ejs .)
+4. npm install 
+
+npm install passport --save
+npm install express-session --save
+npm install passport-local --save
+npm install bcrypt-nodejs --save
+
 npm install mongoose --save
 
+npm start
+http://localhost:3000
 
+
+
+--mongo  and mongoose
 mongodb is the database, mongoose enforces the schema
 
 add path to the mongo bin directory in windows variable
@@ -23,3 +40,24 @@ ReferenceError: releaseEvents is not defined
 
 can occure because of not returning res(200, data);
 IE: not returning the error handler after detecting it.
+
+
+--connecting
+require ngRoute in the javascript
+then config the routes using app.config
+
+$http >> 
+
+to save authentication status >> $rootScope
+$rootScope is like a global variable provided by angular
+$location >> to change the url and redirect user
+
+
+ng-show takes true or false than shows the element
+ng-hide similar to ng-show instad of showing it hides.
+
+factory >> receive the value returned, to customize 
+services >> useful to share information
+provider >> like a constructor, reusing data
+
+$resource >> to use on RESTful endpoints
