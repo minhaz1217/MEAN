@@ -61,3 +61,10 @@ services >> useful to share information
 provider >> like a constructor, reusing data
 
 $resource >> to use on RESTful endpoints
+
+
+--deploying
+
+setup databases in microsoft azure
+select mongolab because it has free full sandbox
+setup the devmode in api.js

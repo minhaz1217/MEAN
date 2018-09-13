@@ -1,0 +1,33 @@
+<!--register.html-->
+<html>
+  <head>
+    <title>Chirp</title>
+    <!--
+
+    -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular-resource.js"></script>
+
+    <script src="javascripts/chirpApp.js"></script>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <nav class="navbar-fluid navbar-default navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"> Chirp! </a>
+        <p class="navbar-text"> Learnng the MEAN stack</p>
+
+        <p class="navbar-right navbar-text" ng-hide="authenticated"><a href="#/login">Login</a> or <a href="#/signup">Register</a></p>
+        <p class="navbar-right navbar-text" ng-show="authenticated"><a href="#/logout" ng-click="signout()">Logout</a></p>
+        <p class="navbar-right navbar-text" ng-show="authenticated">Signed in as {{current_user}}</p>
+      </div>
+    </nav>
+  <body ng-app="chirpApp">
+      <div class="col-md-offset-2 col-md-8">
+      <div ng-view>
+      </div>
+      </div>
+  </body>
+</html>
